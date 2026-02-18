@@ -84,7 +84,7 @@
 
     <script>
         async function getWeather() {
-            const apiKey = "1a22bc9f7d245f80d8e84da34c4340e8"; // Replace with your API key
+            const apiKey = "1a22bc9f7d245f80d8e84da34c4340e8"; 
             const city = document.getElementById("city").value.trim();
 
             if (!city) {
@@ -105,12 +105,12 @@
                         <p>🌬️ Weather: ${data.weather[0].description}</p>
                     `;
 
-                    // Set Weather Icon
+                   
                     const iconUrl = `http://openweathermap.org/img/wn/${data.weather[0].icon}.png`;
                     document.getElementById("weatherIcon").src = iconUrl;
                     document.getElementById("weatherIcon").style.display = "block";
 
-                    // Show result box
+                    
                     document.getElementById("weatherResult").style.display = "block";
 
                 } else {
